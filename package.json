@@ -1,0 +1,23 @@
+{
+  "name": "dino_list",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "deno task dev:api & deno task dev:vite",
+    "dev:api": "deno run --allow-env --allow-net api/main.ts",
+    "dev:vite": "deno run -A npm:vite"
+  },
+  "dependencies": {
+    "@oak/oak": "npm:@jsr/oak__oak@^14.2.0",
+    "@tajpouria/cors": "npm:@jsr/tajpouria__cors@^1.2.1",
+    "vue": "^3.5.10",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  }
+}
